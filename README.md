@@ -1,5 +1,4 @@
 # new_repo_php
-<h1>New REPO for DebtGes PHP Challenge</h1>
 
 <h2>API ENDPOINTS</h2>
 
@@ -63,6 +62,6 @@ curl -X DELETE http://localhost:<em>PORT</em>/deleteReview/<em>{id}</em>
 
 <ul>
 	<li>Used faker (PHP lib) to generate fake data. However it cant generate movie titles. I generated street addresses to replace the movie title in order to save me some time.</li>
-	<li>Missing the constraints. i.e., when deleting a user with a certain id, that user must exist in the DB.</li>
-	<li>Missing a good response when deleting something from the DB.</li>
+	<li>Missing: Get average rating of movie and user.</li>
+	
 </ul>

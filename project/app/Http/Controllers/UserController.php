@@ -43,25 +43,16 @@ class UserController extends Controller
 
     /*
     *   @param User $user
-    *   @param Request $request
-    *   @return UserResource
-    */
-    public function update(User $user, Request $request): UserResource
-    {
-
-        $user->update($request->all());
-
-        return new UserResource($user);
-    }
-
-    /*
-    *   @param User $user
     *   @return \Illuminate\Http\JsonResponse
     *   @throws \Exception
     */
     public function destroy(User $deleteUser)
     {
+
         $deleteUser->delete();
+
+        printf("\n\nThe following user was deleted: \n\n");
+        print($deleteUser);
 
         return response()->json();
     }

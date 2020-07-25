@@ -40,21 +40,8 @@ class ReviewController extends Controller
         ]);
 
         // Still need to check if the idMovie and idUser exists in the db
-
+        // ...
         $review = Review::create($request->all());
-
-        return new ReviewResource($review);
-    }
-
-    /*
-    *   @param Review $review
-    *   @param Request $request
-    *   @return ReviewResource
-    */
-    public function update(Review $review, Request $request): ReviewResource
-    {
-
-        $review->update($request->all());
 
         return new ReviewResource($review);
     }
@@ -66,8 +53,13 @@ class ReviewController extends Controller
     */
     public function destroy(Review $deleteReview)
     {
+
         $deleteReview->delete();
+
+        printf("\n\nThe following review was deleted:\n\n");
+        print($deleteReview);
 
         return response()->json();
     }
+
 }

@@ -43,25 +43,16 @@ class MovieController extends Controller
 
     /*
     *   @param Movie $movie
-    *   @param Request $request
-    *   @return MovieResource
-    */
-    public function update(Movie $movie, Request $request): MovieResource
-    {
-
-        $movie->update($request->all());
-
-        return new MovieResource($movie);
-    }
-
-    /*
-    *   @param Movie $movie
     *   @return \Illuminate\Http\JsonResponse
     *   @throws \Exception
     */
     public function destroy(Movie $deleteMovie)
     {
+
         $deleteMovie->delete();
+
+        printf("\n\nThe following movie was deleted: \n\n");
+        print($deleteMovie);
 
         return response()->json();
     }
