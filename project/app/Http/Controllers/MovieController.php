@@ -13,9 +13,9 @@ class MovieController extends Controller
     * @param Movie $movie
     * @return MovieResource
     */
-    public function show(Movie $movie): MovieResource
+    public function show(Movie $getmovie): MovieResource
     {
-        return new MovieResource($movie);
+        return new MovieResource($getmovie);
     }
 
     /*

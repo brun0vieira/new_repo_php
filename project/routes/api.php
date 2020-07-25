@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Movie;
+use App\Http\Resources\UserResource;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::apiResource('/getAllUsers', 'UserController');
 Route::apiResource('/getAllMovies', 'MovieController');
 
 Route::apiResource('/getAllReviews', 'ReviewController');
+
+Route::apiResource('/getuser', 'UserController');
+
+Route::apiResource('/getmovie', 'MovieController');
+
+Route::apiResource('/getreview', 'ReviewController');

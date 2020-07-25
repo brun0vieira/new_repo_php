@@ -13,9 +13,9 @@ class UserController extends Controller
     * @param User $user
     * @return UserResource
     */
-    public function show(User $user): UserResource
+    public function show(User $getuser): UserResource
     {
-        return new UserResource($user);
+        return new UserResource($getuser);
     }
 
     /*

@@ -13,9 +13,9 @@ class ReviewController extends Controller
     * @param Review $review
     * @return ReviewResource
     */
-    public function show(Review $review): ReviewResource
+    public function show(Review $getreview): ReviewResource
     {
-        return new ReviewResource($review);
+        return new ReviewResource($getreview);
     }
 
     /*
