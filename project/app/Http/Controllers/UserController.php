@@ -59,9 +59,9 @@ class UserController extends Controller
     *   @return \Illuminate\Http\JsonResponse
     *   @throws \Exception
     */
-    public function destroy(User $user)
+    public function destroy(User $deleteUser)
     {
-        $user->delete();
+        $deleteUser->delete();
 
         return response()->json();
     }

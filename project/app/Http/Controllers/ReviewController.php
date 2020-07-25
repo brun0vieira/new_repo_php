@@ -64,9 +64,9 @@ class ReviewController extends Controller
     *   @return \Illuminate\Http\JsonResponse
     *   @throws \Exception
     */
-    public function destroy(Review $review)
+    public function destroy(Review $deleteReview)
     {
-        $review->delete();
+        $deleteReview->delete();
 
         return response()->json();
     }

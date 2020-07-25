@@ -59,9 +59,9 @@ class MovieController extends Controller
     *   @return \Illuminate\Http\JsonResponse
     *   @throws \Exception
     */
-    public function destroy(Movie $movie)
+    public function destroy(Movie $deleteMovie)
     {
-        $movie->delete();
+        $deleteMovie->delete();
 
         return response()->json();
     }

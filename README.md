@@ -44,3 +44,17 @@ curl -X POST http://localhost:<em>PORT</em>/insertMovie -d "movie=<em>MOVIE_TITL
 <h4>Review</h4>
 
 curl -X POST http://localhost:<em>PORT</em>/insertReview -d "idMovie=<em>MOVIE_ID</em> & idUser=<em>USER_ID</em> & rating=<em>RATING</em> & review=<em>REVIEW_TEXT</em>"
+
+<h3>Delete----------</h3>
+
+<h4>User</h4>
+
+curl -X DELETE http://localhost:<em>PORT</em>/deleteUser/<em>{id}</em>
+
+<h4>Movie</h4>
+
+curl -X DELETE http://localhost:<em>PORT</em>/deleteMovie/<em>{id}</em>
+
+<h4>Review</h4>
+
+curl -X DELETE http://localhost:<em>PORT</em>/deleteReview/<em>{id}</em>

@@ -33,3 +33,9 @@ Route::apiResource('/insertUser', 'UserController');
 Route::apiResource('/insertMovie', 'MovieController');
 
 Route::apiResource('/insertReview', 'ReviewController');
+
+Route::apiResource('/deleteUser', 'UserController');
+
+Route::apiResource('/deleteMovie', 'MovieController');
+
+Route::apiResource('/deleteReview', 'ReviewController');
