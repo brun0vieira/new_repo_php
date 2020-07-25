@@ -39,6 +39,8 @@ class ReviewController extends Controller
             'review'  => 'required',
         ]);
 
+        // Still need to check if the idMovie and idUser exists in the db
+
         $review = Review::create($request->all());
 
         return new ReviewResource($review);

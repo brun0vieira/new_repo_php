@@ -31,3 +31,5 @@ Route::apiResource('/getreview', 'ReviewController');
 Route::apiResource('/insertUser', 'UserController');
 
 Route::apiResource('/insertMovie', 'MovieController');
+
+Route::apiResource('/insertReview', 'ReviewController');
