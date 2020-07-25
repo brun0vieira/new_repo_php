@@ -58,3 +58,7 @@ curl -X DELETE http://localhost:<em>PORT</em>/deleteMovie/<em>{id}</em>
 <h4>Review</h4>
 
 curl -X DELETE http://localhost:<em>PORT</em>/deleteReview/<em>{id}</em>
+
+<h3>Observations</h3>
+
+Used faker (PHP lib) to generate fake data. However it cant generate movie titles. I generated street addresses to replace the movie title in order to save me some time.
