@@ -23,7 +23,7 @@ class MovieController extends Controller
     */
     public function index(): MovieResourceCollection
     {
-        return new MovieResourceCollection(Movie::paginate());
+        return new MovieResourceCollection(Movie::all());
     }
 
     /*

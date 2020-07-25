@@ -23,7 +23,7 @@ class ReviewController extends Controller
     */
     public function index(): ReviewResourceCollection
     {
-        return new ReviewResourceCollection(Review::paginate());
+        return new ReviewResourceCollection(Review::all());
     }
 
     /*
