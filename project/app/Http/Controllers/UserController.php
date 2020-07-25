@@ -48,7 +48,6 @@ class UserController extends Controller
     */
     public function destroy(User $deleteUser)
     {
-
         $deleteUser->delete();
 
         printf("\n\nThe following user was deleted: \n\n");

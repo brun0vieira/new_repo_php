@@ -63,5 +63,6 @@ curl -X DELETE http://localhost:<em>PORT</em>/deleteReview/<em>{id}</em>
 <ul>
 	<li>Used faker (PHP lib) to generate fake data. However it cant generate movie titles. I generated street addresses to replace the movie title in order to save me some time.</li>
 	<li>Missing: Get average rating of movie and user.</li>
+	<li>To seed the DB, just run this on terminal: php artisan db:seed</li>
 	
 </ul>
