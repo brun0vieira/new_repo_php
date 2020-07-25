@@ -35,9 +35,9 @@ curl -X GET http://localhost:<em>PORT</em>/getreview/<em>{id}</em>
 
 <h4>User</h4>
 
-curl -X GET http://localhost:<em>PORT</em>/insertUser -d "username=<em>USERNAME</em>"
+curl -X POST http://localhost:<em>PORT</em>/insertUser -d "username=<em>USERNAME</em>"
 
 <h4>Movie</h4>
 
-curl -X GET http://localhost:<em>PORT</em>/insertMovie -d "movie=<em>MOVIE_TITLE</em>"
+curl -X POST http://localhost:<em>PORT</em>/insertMovie -d "movie=<em>MOVIE_TITLE</em>"
 
