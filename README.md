@@ -3,7 +3,7 @@
 
 <h2>API ENDPOINTS</h2>
 
-<h3>Get all</h3>
+<h3>Get all----------</h3>
 
 <h4>Users</h4>
 
@@ -17,7 +17,7 @@ curl -X GET http://localhost:<em>PORT</em>/getAllMovies
 
 curl -X GET http://localhost:<em>PORT</em>/getAllReviews
 
-<h3>Get specific</h3>
+<h3>Get specific----------</h3>
 
 <h4>User</h4>
 
@@ -31,7 +31,7 @@ curl -X GET http://localhost:<em>PORT</em>/getmovie/<em>{id}</em>
 
 curl -X GET http://localhost:<em>PORT</em>/getreview/<em>{id}</em>
 
-<h3>Insert new</h3>
+<h3>Insert new----------</h3>
 
 <h4>User</h4>
 
@@ -41,3 +41,6 @@ curl -X POST http://localhost:<em>PORT</em>/insertUser -d "username=<em>USERNAME
 
 curl -X POST http://localhost:<em>PORT</em>/insertMovie -d "movie=<em>MOVIE_TITLE</em>"
 
+<h4>Review</h4>
+
+curl -X POST http://localhost:<em>PORT</em>/insertReview -d "idMovie=<em>MOVIE_ID</em> & idUser=<em>USER_ID</em> & rating=<em>RATING</em> & review=<em>REVIEW_TEXT</em>"
