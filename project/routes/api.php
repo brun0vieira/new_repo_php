@@ -15,8 +15,8 @@ use App\Movie;
 |
 */
 
-Route::apiResource('/movie', 'MovieController');
+Route::apiResource('/getAllUsers', 'UserController');
 
-Route::apiResource('/user', 'UserController');
+Route::apiResource('/getAllMovies', 'MovieController');
 
-Route::apiResource('/review', 'ReviewController');
+Route::apiResource('/getAllReviews', 'ReviewController');
