@@ -7,27 +7,37 @@
 
 <h4>Users</h4>
 
-curl -X GET http://localhost:<em>YourPort</em>/getAllUsers
+curl -X GET http://localhost:<em>PORT</em>/getAllUsers
 
 <h4>Movies</h4>
 
-curl -X GET http://localhost:<em>YourPort</em>/getAllMovies
+curl -X GET http://localhost:<em>PORT</em>/getAllMovies
 
 <h4>Reviews</h4>
 
-curl -X GET http://localhost:<em>YourPort</em>/getAllReviews
+curl -X GET http://localhost:<em>PORT</em>/getAllReviews
 
 <h3>Get specific</h3>
 
 <h4>User</h4>
 
-curl -X GET http://localhost:<em>YourPort</em>/getuser/<em>{id}</em>
+curl -X GET http://localhost:<em>PORT</em>/getuser/<em>{id}</em>
 
 <h4>Movie</h4>
 
-curl -X GET http://localhost:<em>YourPort</em>/getmovie/<em>{id}</em>
+curl -X GET http://localhost:<em>PORT</em>/getmovie/<em>{id}</em>
 
 <h4>Review</h4>
 
-curl -X GET http://localhost:<em>YourPort</em>/getreview/<em>{id}</em>
+curl -X GET http://localhost:<em>PORT</em>/getreview/<em>{id}</em>
+
+<h3>Insert new</h3>
+
+<h4>User</h4>
+
+curl -X GET http://localhost:<em>PORT</em>/insertUser -d "username=<em>USERNAME</em>"
+
+<h4>Movie</h4>
+
+curl -X GET http://localhost:<em>PORT</em>/insertMovie -d "movie=<em>MOVIE_TITLE</em>"
 

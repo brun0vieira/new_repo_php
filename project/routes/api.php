@@ -27,3 +27,7 @@ Route::apiResource('/getuser', 'UserController');
 Route::apiResource('/getmovie', 'MovieController');
 
 Route::apiResource('/getreview', 'ReviewController');
+
+Route::apiResource('/insertUser', 'UserController');
+
+Route::apiResource('/insertMovie', 'MovieController');
