@@ -39,3 +39,7 @@ Route::apiResource('/deleteUser', 'UserController');
 Route::apiResource('/deleteMovie', 'MovieController');
 
 Route::apiResource('/deleteReview', 'ReviewController');
+
+Route::get('/avgRatingMovie/{movie_id}', 'averageRatingController@movie');
+
+Route::get('/avgRatingUser/{user_id}', 'averageRatingController@user');
