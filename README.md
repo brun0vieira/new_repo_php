@@ -74,5 +74,6 @@ curl -X GET http://localhost:<em>PORT</em>/avgRatingUser/<em>{user_id}</em>
 <ul>
 	<li>Used faker (PHP lib) to generate fake data. However it cant generate movie titles. I generated street addresses to replace the movie title in order to save me some time.</li>
 	<li>The DB is already seeded but to stress it even more, just run this on terminal: php artisan db:seed</li>
+	<li>To run the server just run: php artisan serve</li>
 	
 </ul>
