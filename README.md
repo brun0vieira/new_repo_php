@@ -58,11 +58,21 @@ curl -X DELETE http://localhost:<em>PORT</em>/deleteMovie/<em>{id}</em>
 
 curl -X DELETE http://localhost:<em>PORT</em>/deleteReview/<em>{id}</em>
 
+<h3>Get average rating----------</h3>
+
+<h4>Movie</h4>
+
+curl -X GET http://localhost:<em>PORT</em>/avgRatingMovie/<em>{movie_id}</em>
+
+<h4>User</h4>
+
+curl -X GET http://localhost:<em>PORT</em>/avgRatingUser/<em>{user_id}</em>
+
+
 <h3>Observations</h3>
 
 <ul>
 	<li>Used faker (PHP lib) to generate fake data. However it cant generate movie titles. I generated street addresses to replace the movie title in order to save me some time.</li>
-	<li>Missing: Get average rating of movie and user.</li>
-	<li>To seed the DB, just run this on terminal: php artisan db:seed</li>
+	<li>The DB is already seeded but to stress it even more, just run this on terminal: php artisan db:seed</li>
 	
 </ul>
